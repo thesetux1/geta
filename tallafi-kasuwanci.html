@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "ec7933a3-a349-4da2-a822-a33475d37aa0",
+    });
+  });
+</script>
 	    <script type="text/javascript" language="javascript">
 var areYouReallySure = false;
 var internalLink = false;
